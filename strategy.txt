@@ -1,15 +1,58 @@
-I. Backtrack
+### Array and Hashing ###
 
-II. Bit Manipulation
+- Contains duplicate (check duplicate in an array): 
+    use Hashset (hashtable data structure, only unique elements, allow null).
+    Run a loop inserting element to hashset while checking if hashet contains that element. 
+    if contains return true. return false after the loop  //  hashset.containsKey(nums[i])
 
-III. Greedy
+- Valid Anagram (Anagram is a word rephrased using all original letters exactly one): 
+    check if their lengths are equal ( A and B)
+    Run a loop to count repeated character in A++ and B--
+    Run a second loop to check count of the store === 0
+    int[] store = new int[26]
+    store[A.charAt(i) - 'a']++
 
-IV. Graph
+- TwoSum (find position of a,b in array that a + b = target):
+    run a loop and check if hashmap contains target hashmap.containsKey(currentNum) -> if true -> return index of a and b
+    if false -> add value and index to hashmap.put(value,index) 
 
-V. Interval
+- groupAnagram (group list of anagram words in an array):
+    option 1: 
+        iterate every string in list of words
+        sort the string's character ascending -> key = new String(arr)
+        check if hashmap.containsKey(key)
+            if yes -> add string to the list of that key
+            if no -> make a new list using that key then add the string to the list
+            return ArrayList<>(hashmap.values())
+    option 2:
+        int[] store = new int[26]
+        loop (str.length) -> store[A.charAt(i) - 'a']  -> key = new String(store)
 
-VI. Math
+- top K frequent Element :
+    loop and count frequent -> for (int num : nums) hashmap.put(num, hashmap.getOrDefault(num, 0) + 1);   
+    make a piority queue -> sort hashmap
+    return top K 
 
-VII. 1D-Programing
+- 238. Product of Array Except Self
+    run 2 loops, product of left side * product of right side
 
-VIII. 2D-Programing
+- 128. Longest Consecutive Sequence  - runs in O(n) time - độ dài nhất của dãy số liên tục
+
+
+### Backtrack
+
+### Bit Manipulation
+
+### Greedy
+
+### Graph
+
+### Interval
+
+### Math
+
+### 1D-Programing
+
+### 2D-Programing
+
+
