@@ -37,6 +37,11 @@
     run 2 loops, product of left side * product of right side
 
 - 128. Longest Consecutive Sequence  - runs in O(n) time - độ dài nhất của dãy số liên tục
+    sort the original array 
+    if num[i]+1 == num[i] -> count ++ -> if count > max; max = count; 
+    else if num[i] == num[i+1] continue // skip same num
+    else count = 1;
+    return max
 
 
 ### Backtrack
