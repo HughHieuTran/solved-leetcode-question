@@ -1,4 +1,4 @@
-### Array and Hashing ###
+################################# Array and Hashing #################################
 
 - Contains duplicate (check duplicate in an array): 
     use Hashset (hashtable data structure, only unique elements, allow null).
@@ -26,7 +26,7 @@
             return ArrayList<>(hashmap.values())
     option 2:
         int[] store = new int[26]
-        loop (str.length) -> store[A.charAt(i) - 'a']  -> key = new String(store)
+        loop (str.length) -> store[A.charAt(i) - 'a']  -> key = Arrays.toString(store)
 
 - top K frequent Element :
     loop and count frequent -> for (int num : nums) hashmap.put(num, hashmap.getOrDefault(num, 0) + 1);   
@@ -43,8 +43,70 @@
     else count = 1;
     return max
 
+################################# 2 pointer #################################
+- 125. Valid Palindrome - reads the same forward and backward
+    a variable A start from begin and a variable B start from end
+    compare A[i] and B[i] if they're character -> return false if not equal
 
-### Backtrack
+- 15. 3Sum
+    sort the array ascending -> iterate from 0 to array.length - 2 
+    if num[i] == num[i-1] -> skip  (same number with previous)
+    let the target = 0 - current , left = current+1; right = array.length -1
+    while (left < right) 
+        if (left+right==target) 
+            -> add to result
+            while left == left+1 -> left++
+            while right == right-1 -> right--
+        else if left+right>target ->right--
+        else left++
+
+- 11. Container With Most Water 
+    let left = 0, right = array.length -1
+    length = right-left, height = min(heightLeft, heightRight) -> area = length*height   
+    if heightLeft > heightRight -> right-- 
+    if heightLeft < heightRight -> left++ 
+    -> calculate new area -> max(oldArea, newArea)
+
+################################# Sliding Window #################################
+
+- 121. Best Time to Buy and Sell Stock 
+    iterate thru the array
+    minPrice = Min(currentPrice, oldMinPrice)
+    currentProfit = currentPrice - minPrice
+    maxProfit = max(currentProfit, oldMaxProfit)
+
+- 3. Longest Substring Without Repeating Characters
+    iterate thru array, create new charList
+    if charList contains current Character
+        remove the character in charList
+        remove from the begining index to that character index in charList
+    then
+    add current Character
+    maxLength = Max(oldListCharLength, newListCharLength);
+
+- 424. Longest Repeating Character Replacement ( K replacements )
+    startIndex = 0;
+    iterate thru the string
+    maxRepeatedCharCount at currentIndex = maxCount 
+    maxLength = currentIndex - startIndex + 1
+    if maxLength > K + maxCount  // if reached replacements max 
+        startIndex++    // reduce maxLength by 1
+        maxCount--      // reduce charCount by 1
+    answer = Max(maxLength -1, oldMaxLength); //-1 because startIndex++
+
+
+
+
+
+
+
+  
+
+
+
+
+
+################################# Backtrack #################################
 
 ### Bit Manipulation
 
