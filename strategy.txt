@@ -94,16 +94,29 @@
         maxCount--      // reduce charCount by 1
     answer = Max(maxLength -1, oldMaxLength); //-1 because startIndex++
 
+- 76. Minimum Window Substring
+    set target 's characters as key and it's count as value in hashmap
+    iterate thru the string 
+        if hashmap contains current char -> reduce the count in hashmap by 1 -> if count == 0 -> increase the matched 
+        while matched == hashmap.size() 
+            if the current window length < min window length
+                -> set the minWindow = current window length
+                -> set the minStart of window to current start
+            if hashmap contains character at start -> reduce matched -> increase count of that char in hashmap by 1
+            increase the start by 1
+    end -> substring from minStart to the minWindow 
 
 
+################################# Stack #################################
 
-
-
-
-  
-
-
-
+- 20. Valid Parentheses
+    iterate thru the string
+        if current char is left Parentheses -> push the char to stack
+        else if current char is right parentheses -> compare the peek value of stack and the current char 
+            -> if true couple -> pop the stack
+            -> else -> return false
+    return true if stack.length ==0 
+            -> else false
 
 
 ################################# Backtrack #################################
