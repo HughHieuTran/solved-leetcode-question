@@ -1,0 +1,15 @@
+C:\Users\nhota\OneDrive\Desktop\solved-leetcode-question\bin\Debug\net7.0\solved-leetcode-question.exe
+C:\Users\nhota\OneDrive\Desktop\solved-leetcode-question\bin\Debug\net7.0\solved-leetcode-question.deps.json
+C:\Users\nhota\OneDrive\Desktop\solved-leetcode-question\bin\Debug\net7.0\solved-leetcode-question.runtimeconfig.json
+C:\Users\nhota\OneDrive\Desktop\solved-leetcode-question\bin\Debug\net7.0\solved-leetcode-question.dll
+C:\Users\nhota\OneDrive\Desktop\solved-leetcode-question\bin\Debug\net7.0\solved-leetcode-question.pdb
+C:\Users\nhota\OneDrive\Desktop\solved-leetcode-question\obj\Debug\net7.0\solved-leetcode-question.csproj.AssemblyReference.cache
+C:\Users\nhota\OneDrive\Desktop\solved-leetcode-question\obj\Debug\net7.0\solved-leetcode-question.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nhota\OneDrive\Desktop\solved-leetcode-question\obj\Debug\net7.0\solved-leetcode-question.AssemblyInfoInputs.cache
+C:\Users\nhota\OneDrive\Desktop\solved-leetcode-question\obj\Debug\net7.0\solved-leetcode-question.AssemblyInfo.cs
+C:\Users\nhota\OneDrive\Desktop\solved-leetcode-question\obj\Debug\net7.0\solved-leetcode-question.csproj.CoreCompileInputs.cache
+C:\Users\nhota\OneDrive\Desktop\solved-leetcode-question\obj\Debug\net7.0\solved-leetcode-question.dll
+C:\Users\nhota\OneDrive\Desktop\solved-leetcode-question\obj\Debug\net7.0\refint\solved-leetcode-question.dll
+C:\Users\nhota\OneDrive\Desktop\solved-leetcode-question\obj\Debug\net7.0\solved-leetcode-question.pdb
+C:\Users\nhota\OneDrive\Desktop\solved-leetcode-question\obj\Debug\net7.0\solved-leetcode-question.genruntimeconfig.cache
+C:\Users\nhota\OneDrive\Desktop\solved-leetcode-question\obj\Debug\net7.0\ref\solved-leetcode-question.dll
