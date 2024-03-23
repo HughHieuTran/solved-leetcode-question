@@ -12,24 +12,25 @@ public:
             m[getKey(str)].push_back(str);
         }
         vector<vector<string>> result;
+
         for (auto it = m.begin(); it != m.end(); it++)
         {
             result.push_back(it->second);
         }
-        return result;
     }
 
     string getKey(string word)
     {
-        int a[26] = {0};
-        for (int i = 0; i < word.length(); i++)
+        int arr[26] = {0};
+        for (char c : word)
         {
-            a[word[i] - 'a']++;
+            arr[c - 'a']++;
         }
         string result = "";
-        for (int i = 0; i < 26; i++)
+        for (int i : arr)
         {
-            result.append(a[i] + "%");
+            result.append(to_string(i) + "%");
         }
+        return result;
     }
 };
