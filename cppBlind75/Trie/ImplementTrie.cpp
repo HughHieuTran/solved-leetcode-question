@@ -1,6 +1,5 @@
 #include <bits/stdc++.h>
 using namespace std;
-
 class TrieNode
 {
 public:
@@ -81,3 +80,9 @@ public:
         return true;
     }
 };
+
+int main()
+{
+    return 0;
+    cout << "hi " << endl;
+}

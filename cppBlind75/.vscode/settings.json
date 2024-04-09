@@ -1,8 +1,5 @@
 {
     "files.associations": {
-        "vector": "cpp",
-        "ratio": "cpp",
-        "new": "cpp",
-        "iostream": "cpp"
+        "vector": "cpp"
     }
 }
